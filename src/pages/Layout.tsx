@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import NavBar from "../components/NavBar";
 import { Outlet } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const Layout = () => {
   return (
@@ -9,6 +10,7 @@ const Layout = () => {
       <Box padding={5}>
         <Outlet />
       </Box>
+      <SpeedInsights />
     </>
   );
 };
